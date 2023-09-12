@@ -24,8 +24,8 @@ try:
     answer = list(alert.text.split())[-1]
     alert.accept()
     browser.get("https://stepik.org/catalog?auth=login")
-    browser.find_element(By.ID, "id_login_email").send_keys("имэйл")
-    browser.find_element(By.ID, "id_login_password").send_keys("пароль")
+    browser.find_element(By.ID, "id_login_email").send_keys(#тут должен быть имэйл)
+    browser.find_element(By.ID, "id_login_password").send_keys(#тут должен быть пароль)
     browser.find_element(By.CLASS_NAME, "sign-form__btn").click()
     time.sleep(5)
     browser.get("https://stepik.org/lesson/181384/step/8?auth=login&unit=156009")
